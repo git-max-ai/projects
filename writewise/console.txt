@@ -1,0 +1,212 @@
+WriteWise: Initializing new instance
+content.js:43 WriteWise: Setting up event listeners
+94173083-client_js_prod_kix_core__en_gb.js:4450 WriteWise: Text input focused: IFRAME
+94173083-client_js_prod_kix_core__en_gb.js:4450 WriteWise: Adding grammar checking to element: IFRAME
+/drivesharing/clientmodel?id=124Xwj-8kH64OoSSyvB8PLsMuOXf0UnKbFZDpS_qvcOU&foreignService=kix&authuser=6&origin=https%3A%2F%2Fdocs.google.com:1 An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.Understand this warning
+content.js:87 WriteWise: Starting initial scan
+content.js:94 WriteWise: Scanning existing inputs
+content.js:96 WriteWise: Found 2 text inputs
+content.js:100 WriteWise: Input 1 (INPUT): "Untitled document"
+content.js:103 WriteWise: Adding grammar checking to input 1
+content.js:309 WriteWise: Adding grammar checking to element: INPUT
+content.js:317 WriteWise: Checking existing text: Untitled document
+content.js:333 WriteWise: Checking text of length: 17
+content.js:342 WriteWise: Sending text to background script...
+content.js:100 WriteWise: Input 2 (INPUT): "100%"
+content.js:103 WriteWise: Adding grammar checking to input 2
+content.js:309 WriteWise: Adding grammar checking to element: INPUT
+content.js:317 WriteWise: Checking existing text: 100%
+content.js:333 WriteWise: Checking text of length: 4
+content.js:342 WriteWise: Sending text to background script...
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 0 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 0 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:110 WriteWise: Performing secondary scan for dynamic content...
+content.js:141 WriteWise: Found Google Docs content (.kix-appview-editor-container): " Gemini created these notes. They can contain errors so should be double-checked. How Gemini takes n..."
+content.js:309 WriteWise: Adding grammar checking to element: DIV
+content.js:317 WriteWise: Checking existing text:  Gemini created these notes. They can contain erro
+content.js:333 WriteWise: Checking text of length: 130
+content.js:342 WriteWise: Sending text to background script...
+content.js:225 WriteWise: Mutation observer set up for content changes
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 1 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:549 WriteWise: Highlighting input field with 1 issues
+content.js:577 WriteWise: Added visual indicator for 1 issues (spelling) with color #ff5757
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:206 WriteWise: Detected content change: " Gemini created these notes. They can contain erro..."
+content.js:210 WriteWise: Adding checking to newly detected content
+content.js:309 WriteWise: Adding grammar checking to element: DIV
+content.js:317 WriteWise: Checking existing text:  Gemini created these notes. They can contain erro
+content.js:333 WriteWise: Checking text of length: 123
+content.js:342 WriteWise: Sending text to background script...
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 2 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:549 WriteWise: Highlighting input field with 2 issues
+content.js:577 WriteWise: Added visual indicator for 2 issues (spelling) with color #ff5757
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:206 WriteWise: Detected content change: "Suggestion is wrongSuggestion is unclearProvide mo..."
+content.js:210 WriteWise: Adding checking to newly detected content
+content.js:309 WriteWise: Adding grammar checking to element: DIV
+content.js:317 WriteWise: Checking existing text: Suggestion is wrongSuggestion is unclearProvide mo
+content.js:333 WriteWise: Checking text of length: 119
+content.js:342 WriteWise: Sending text to background script...
+8content.js:206 WriteWise: Detected content change: "Always correct to "should be"Add to personal dicti..."
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+8content.js:206 WriteWise: Detected content change: "Always correct to "should be"Add to personal dicti..."
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 3 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:549 WriteWise: Highlighting input field with 3 issues
+content.js:577 WriteWise: Added visual indicator for 3 issues (spelling) with color #ff5757
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:206 WriteWise: Detected content change: " Saved to Drive..."
+content.js:210 WriteWise: Adding checking to newly detected content
+content.js:309 WriteWise: Adding grammar checking to element: DIV
+content.js:317 WriteWise: Checking existing text:  Saved to Drive
+content.js:333 WriteWise: Checking text of length: 15
+content.js:342 WriteWise: Sending text to background script...
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 0 issues
+content.js:362 WriteWise: Highlighting issues immediately
+8content.js:206 WriteWise: Detected content change: "Always correct to "be it"Add to personal dictionar..."
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+8content.js:206 WriteWise: Detected content change: "Always correct to "become"Add to personal dictiona..."
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:206 WriteWise: Detected content change: "Spelling suggestion..."
+94173083-client_js_prod_kix_core__en_gb.js:4450 WriteWise: Text input focused: IFRAME
+94173083-client_js_prod_kix_core__en_gb.js:4450 WriteWise: Adding grammar checking to element: IFRAME
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+8content.js:206 WriteWise: Detected content change: "Always correct to "be it"Add to personal dictionar..."
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+/document/u/6/d/124Xwj-8kH64OoSSyvB8PLsMuOXf0UnKbFZDpS_qvcOU/bind?id=124Xwj-8kH64OoSSyvB8PLsMuOXf0UnKbFZDpS_qvcOU&sid=4878d26aea014650&token=AC4w5ViPE1_JjC6djtxB8gF0fiFrJY81lg%3A1753713362412&ouid=105419881441230380613&includes_info_params=true&cros_files=false&VER=8&tab=t.0&lsq=1753708356617&u=15354444359870043539&vc=1&c=1&w=1&flr=0&gsi=6&ssfi=910&ar=120&arat=JniwtHYocBC63g&smv=69&smb=%5B2147483647%2C%20oAM%3D%5D&cimpl=1&RID=rpc&SID=2A2F6C46070BC4C6&CI=0&AID=21&TYPE=xmlhttp&zx=jmzp7rdxlmsm&t=2:1  Failed to load resource: the server responded with a status of 400 ()Understand this error
+content.js:206 WriteWise: Detected content change: "Untitled document..."
+content.js:210 WriteWise: Adding checking to newly detected content
+content.js:309 WriteWise: Adding grammar checking to element: SPAN
+content.js:317 WriteWise: Checking existing text: Untitled document
+content.js:333 WriteWise: Checking text of length: 17
+content.js:342 WriteWise: Sending text to background script...
+content.js:206 WriteWise: Detected content change: "Private only to me..."
+content.js:210 WriteWise: Adding checking to newly detected content
+content.js:309 WriteWise: Adding grammar checking to element: DIV
+content.js:317 WriteWise: Checking existing text: Private only to me
+content.js:333 WriteWise: Checking text of length: 18
+content.js:342 WriteWise: Sending text to background script...
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 0 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 0 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:206 WriteWise: Detected content change: "                                     Image options..."
+content.js:210 WriteWise: Adding checking to newly detected content
+content.js:309 WriteWise: Adding grammar checking to element: DIV
+content.js:317 WriteWise: Checking existing text:                                      Image options
+content.js:333 WriteWise: Checking text of length: 79
+content.js:342 WriteWise: Sending text to background script...
+content.js:206 WriteWise: Detected content change: "       Normal text   Arial                  Access..."
+content.js:210 WriteWise: Adding checking to newly detected content
+content.js:309 WriteWise: Adding grammar checking to element: DIV
+content.js:317 WriteWise: Checking existing text:        Normal text   Arial                  Access
+content.js:333 WriteWise: Checking text of length: 58
+content.js:342 WriteWise: Sending text to background script...
+8content.js:206 WriteWise: Detected content change: "Always correct to "be it"Add to personal dictionar..."
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 3 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:549 WriteWise: Highlighting input field with 3 issues
+content.js:577 WriteWise: Added visual indicator for 3 issues (spelling) with color #ff5757
+content.js:206 WriteWise: Detected content change: "Hello World..."
+content.js:210 WriteWise: Adding checking to newly detected content
+content.js:309 WriteWise: Adding grammar checking to element: DIV
+content.js:317 WriteWise: Checking existing text: Hello World
+content.js:333 WriteWise: Checking text of length: 11
+content.js:342 WriteWise: Sending text to background script...
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 2 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:549 WriteWise: Highlighting input field with 2 issues
+content.js:577 WriteWise: Added visual indicator for 2 issues (spelling) with color #ff5757
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 0 issues
+content.js:362 WriteWise: Highlighting issues immediately
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:48 WriteWise: Text input focused: IFRAME
+content.js:309 WriteWise: Adding grammar checking to element: IFRAME
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:48 WriteWise: Text input focused: IFRAME
+content.js:309 WriteWise: Adding grammar checking to element: IFRAME
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:206 WriteWise: Detected content change: "Why am I not seeing a suggestion?..."
+content.js:210 WriteWise: Adding checking to newly detected content
+content.js:309 WriteWise: Adding grammar checking to element: DIV
+content.js:317 WriteWise: Checking existing text: Why am I not seeing a suggestion?
+content.js:333 WriteWise: Checking text of length: 33
+content.js:342 WriteWise: Sending text to background script...
+7content.js:206 WriteWise: Detected content change: "Add to personal dictionarySpelling and grammar che..."
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+content.js:348 WriteWise: Received response: Object
+content.js:352 WriteWise: Found 0 issues
+content.js:362 WriteWise: Highlighting issues immediately
+7content.js:206 WriteWise: Detected content change: "Always correct to "could"Add to personal dictionar..."
+content.js:585 WriteWise: Input field clicked, showing tooltip for first issue
+content.js:206 WriteWise: Detected content change: "
+                
+                    Spelling Iss..."
+8content.js:206 WriteWise: Detected content change: "Always correct to "could"Add to personal dictionar..."

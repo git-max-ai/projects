@@ -1,0 +1,214 @@
+/* WriteWise Content Script Styles */
+
+.writewise-active {
+    transition: border-left 0.3s ease;
+}
+
+.writewise-highlight {
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 0px 1px;
+    margin: 0;
+    transition: all 0.2s ease;
+    position: relative;
+    display: inline;
+}
+
+.writewise-highlight:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.writewise-spelling {
+    background-color: rgba(255, 87, 87, 0.1);
+    border-bottom: 2px wavy #ff5757;
+    text-decoration: underline;
+    text-decoration-color: #ff5757;
+    text-decoration-style: wavy;
+    text-underline-offset: 2px;
+}
+
+.writewise-grammar {
+    background-color: rgba(255, 193, 7, 0.1);
+    border-bottom: 2px wavy #ffc107;
+    text-decoration: underline;
+    text-decoration-color: #ffc107;
+    text-decoration-style: wavy;
+    text-underline-offset: 2px;
+}
+
+.writewise-capitalization {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-bottom: 2px wavy #4caf50;
+    text-decoration: underline;
+    text-decoration-color: #4caf50;
+    text-decoration-style: wavy;
+    text-underline-offset: 2px;
+}
+
+.writewise-style {
+    background-color: rgba(156, 39, 176, 0.1);
+    border-bottom: 2px wavy #9c27b0;
+    text-decoration: underline;
+    text-decoration-color: #9c27b0;
+    text-decoration-style: wavy;
+    text-underline-offset: 2px;
+}
+
+.writewise-tooltip {
+    position: fixed;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    z-index: 999999;
+    max-width: 320px;
+    min-width: 250px;
+    padding: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    animation: writeWiseSlideIn 0.2s ease-out;
+}
+
+@keyframes writeWiseSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes writewise-pulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.writewise-tooltip-header {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.writewise-tooltip-message {
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.writewise-tooltip-suggestion {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    border-left: 3px solid #007bff;
+}
+
+.writewise-tooltip-suggestion strong {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.writewise-tooltip-note {
+    font-style: italic;
+    text-align: center;
+}
+
+.writewise-tooltip-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.writewise-tooltip-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.writewise-btn-apply {
+    background: #007bff;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+}
+
+.writewise-btn-apply:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+.writewise-btn-ignore {
+    background: #6c757d;
+    color: white;
+    box-shadow: 0 2px 4px rgba(108, 117, 125, 0.3);
+}
+
+.writewise-btn-ignore:hover {
+    background: #545b62;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(108, 117, 125, 0.4);
+}
+
+/* Animation for when grammar checking is active */
+@keyframes writewise-pulse {
+    0% {
+        border-left-color: #4caf50;
+    }
+
+    50% {
+        border-left-color: #81c784;
+    }
+
+    100% {
+        border-left-color: #4caf50;
+    }
+}
+
+.writewise-active[style*="border-left"] {
+    animation: writewise-pulse 2s infinite;
+}
+
+/* Dark theme support */
+@media (prefers-color-scheme: dark) {
+    .writewise-tooltip {
+        background: #2d2d2d;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+
+    .writewise-tooltip-header {
+        color: #f0f0f0;
+    }
+
+    .writewise-tooltip-message {
+        color: #b0b0b0;
+    }
+
+    .writewise-tooltip-suggestion {
+        background: #3a3a3a;
+    }
+}

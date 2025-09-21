@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "WriteWise - Grammar Assistant",
+    "version": "1.0.0",
+    "description": "An AI-powered grammar and writing assistant that helps improve your writing quality",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "https://api.languagetool.org/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "WriteWise Grammar Assistant"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "tooltip.html"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

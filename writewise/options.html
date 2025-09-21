@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WriteWise - Advanced Settings</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        .content {
+            padding: 32px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: #333;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 8px;
+        }
+
+        .setting-group {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 16px;
+        }
+
+        .setting-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .setting-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .setting-label {
+            flex: 1;
+        }
+
+        .setting-title {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .setting-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .toggle-switch {
+            width: 50px;
+            height: 28px;
+            background: #ccc;
+            border-radius: 14px;
+            position: relative;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .toggle-switch.active {
+            background: #4CAF50;
+        }
+
+        .toggle-switch::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            transition: transform 0.3s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .toggle-switch.active::before {
+            transform: translateX(22px);
+        }
+
+        .btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: 700;
+            color: #4CAF50;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>WriteWise Advanced Settings</h1>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Grammar Checking</h2>
+                <div class="setting-group">
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <div class="setting-title">Enable Grammar Checking</div>
+                            <div class="setting-description">Check for grammar errors and suggestions</div>
+                        </div>
+                        <div class="toggle-switch active" data-setting="checkGrammar"></div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <div class="setting-title">Advanced Grammar Rules</div>
+                            <div class="setting-description">Enable complex grammar pattern detection</div>
+                        </div>
+                        <div class="toggle-switch" data-setting="advancedGrammar"></div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <div class="setting-title">Style Suggestions</div>
+                            <div class="setting-description">Get suggestions for writing style improvements</div>
+                        </div>
+                        <div class="toggle-switch" data-setting="styleSuggestions"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Spelling & Language</h2>
+                <div class="setting-group">
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <div class="setting-title">Spell Checking</div>
+                            <div class="setting-description">Check for spelling errors</div>
+                        </div>
+                        <div class="toggle-switch active" data-setting="checkSpelling"></div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <div class="setting-title">Auto-correct Common Typos</div>
+                            <div class="setting-description">Automatically fix common typing mistakes</div>
+                        </div>
+                        <div class="toggle-switch" data-setting="autoCorrect"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Interface & Behavior</h2>
+                <div class="setting-group">
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <div class="setting-title">Show Tooltips</div>
+                            <div class="setting-description">Display suggestion tooltips on hover</div>
+                        </div>
+                        <div class="toggle-switch active" data-setting="showTooltips"></div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <div class="setting-title">Real-time Checking</div>
+                            <div class="setting-description">Check text as you type (may impact performance)</div>
+                        </div>
+                        <div class="toggle-switch active" data-setting="realTimeCheck"></div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <div class="setting-title">Sound Notifications</div>
+                            <div class="setting-description">Play sound when errors are found</div>
+                        </div>
+                        <div class="toggle-switch" data-setting="soundNotifications"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalErrors">0</div>
+                        <div class="stat-label">Total Errors Found</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="totalWords">0</div>
+                        <div class="stat-label">Words Checked</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="sessionsActive">0</div>
+                        <div class="stat-label">Active Sessions</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="improvementScore">0%</div>
+                        <div class="stat-label">Writing Score</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Data & Privacy</h2>
+                <div class="setting-group">
+                    <div class="setting-item">
+                        <div class="setting-label">
+                            <div class="setting-title">Save Statistics</div>
+                            <div class="setting-description">Keep track of your writing improvements</div>
+                        </div>
+                        <div class="toggle-switch active" data-setting="saveStats"></div>
+                    </div>
+
+                    <button class="btn" onclick="clearAllData()">Clear All Data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Load settings on page load
+        document.addEventListener('DOMContentLoaded', async () => {
+            await loadSettings();
+            await loadStats();
+            setupEventListeners();
+        });
+
+        async function loadSettings() {
+            const settings = await getStorageData([
+                'checkGrammar', 'advancedGrammar', 'styleSuggestions',
+                'checkSpelling', 'autoCorrect', 'showTooltips',
+                'realTimeCheck', 'soundNotifications', 'saveStats'
+            ]);
+
+            // Set toggle states
+            document.querySelectorAll('.toggle-switch').forEach(toggle => {
+                const setting = toggle.getAttribute('data-setting');
+                if (settings[setting]) {
+                    toggle.classList.add('active');
+                }
+            });
+        }
+
+        async function loadStats() {
+            const stats = await getStorageData([
+                'totalIssuesFound', 'totalWordsChecked', 'activeSessions', 'writingScore'
+            ]);
+
+            document.getElementById('totalErrors').textContent = stats.totalIssuesFound || 0;
+            document.getElementById('totalWords').textContent = stats.totalWordsChecked || 0;
+            document.getElementById('sessionsActive').textContent = stats.activeSessions || 0;
+            document.getElementById('improvementScore').textContent = (stats.writingScore || 0) + '%';
+        }
+
+        function setupEventListeners() {
+            document.querySelectorAll('.toggle-switch').forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const setting = toggle.getAttribute('data-setting');
+                    const isActive = toggle.classList.contains('active');
+
+                    if (isActive) {
+                        toggle.classList.remove('active');
+                        saveSetting(setting, false);
+                    } else {
+                        toggle.classList.add('active');
+                        saveSetting(setting, true);
+                    }
+                });
+            });
+        }
+
+        function saveSetting(key, value) {
+            chrome.storage.sync.set({ [key]: value });
+        }
+
+        function getStorageData(keys) {
+            return new Promise((resolve) => {
+                chrome.storage.sync.get(keys, resolve);
+            });
+        }
+
+        async function clearAllData() {
+            if (confirm('Are you sure you want to clear all WriteWise data? This cannot be undone.')) {
+                await chrome.storage.sync.clear();
+                location.reload();
+            }
+        }
+    </script>
+</body>
+
+</html>
